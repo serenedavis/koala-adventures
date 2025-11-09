@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.VBox?>
+<AnchorPane fx:id="tit"
+            fx:controller="org.example.koaladventuresapp.SceneController"
+            maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+      <ImageView fx:id="myHomeBackground"
+                 pickOnBounds="true"
+                 preserveRatio="false">
+         <image>
+            <Image url="@homeBackground.png" />
+         </image>
+      </ImageView>
+
+      <VBox spacing="20" alignment="CENTER"
+            AnchorPane.topAnchor="0.0"
+            AnchorPane.bottomAnchor="0.0"
+            AnchorPane.leftAnchor="0.0"
+            AnchorPane.rightAnchor="0.0">
+
+         <Label fx:id="titleLabel"
+                alignment="CENTER"
+                text="Koala Adventures"
+                textFill="WHITE">
+         </Label>
+
+         <Label fx:id="subTitleLabel"
+                alignment="CENTER"
+                text="Save the Koalas!"
+                textFill="WHITE">
+         </Label>
+
+         <VBox spacing="10" alignment="CENTER">
+            <Button text="Play" textFill="#34a146" onAction="#switchToScene2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button text="Instructions" onAction="#switchToInstructions"/>
+            <Button text="Leaderboard" onAction="#showLeaderboard"/>
+         </VBox>
+      </VBox>
+   </children>
+</AnchorPane>

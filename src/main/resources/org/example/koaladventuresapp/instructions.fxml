@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="instructionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.koaladventuresapp.SceneController">
+   <children>
+      <ImageView fx:id="myInstructionId" pickOnBounds="true" preserveRatio="false">
+         <image>
+            <Image url="@instructionsBackground.png" />
+         </image>
+      </ImageView>
+
+       <VBox alignment="CENTER" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+           <Label fx:id="titleLabel2" alignment="CENTER" text="How to play Koala Adventure" textFill="black">
+               <font>
+                   <Font size="36.0" />
+               </font>
+           </Label>
+
+           <Label fx:id="subTitleLabel2" alignment="CENTER" text="Instructions" textFill="black">
+               <font>
+                   <Font size="22.0" />
+               </font>
+           </Label>
+
+           <Button fx:id="mybutton1" alignment="CENTER" mnemonicParsing="false" onAction="#switchToSceneHome" text="Go back" />
+
+           <Label fx:id="instructions" alignment="CENTER" maxHeight="151.0" prefHeight="151.0" prefWidth="269.0" text="You have one objective in this game: Save the koalas, follow the mini instructions carefully and quickly to win " textFill="black" wrapText="true">
+                  <font>
+                     <Font size="19.0" />
+                  </font>
+           </Label>
+       </VBox>
+   </children>
+</AnchorPane>

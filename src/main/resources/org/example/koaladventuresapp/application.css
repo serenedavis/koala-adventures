@@ -1,0 +1,62 @@
+.root {
+    -fx-background-color: lightblue;
+}
+
+.label {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 26;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+#titleLabel {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 44;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 5, 0, 0, 0);
+}
+
+#subTitleLabel {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 22;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 5, 0, 0, 0);
+}
+
+.button {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 19;
+    -fx-background-color: #ffffffaa; /* semi-transparent white */
+    -fx-text-fill: #34a146;
+    -fx-background-radius: 10;
+}
+
+#titleLabel2 {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 36;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-padding: 40 0 0 0;
+    -fx-effect: dropshadow(gaussian, pink, 5, 0, 0, 0);
+}
+
+#subTitleLabel2 {
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 22;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, pink, 5, 0, 0, 0);
+}
+
+#instructions {
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 19;
+    -fx-padding: 0 0 40 0;
+    -fx-effect: dropshadow(gaussian, pink, 5, 0, 0, 0);
+}
+
+.vbox {
+    -fx-max-height: 500;
+}
+
