@@ -44,7 +44,9 @@
          </Label>
 
          <VBox spacing="10" alignment="CENTER">
-            <Button text="Play" textFill="#34a146" onAction="#switchToScene2">
+            <Button text="Play"
+                    textFill="#34a146"
+                    onAction="#switchToScene2">
                <font>
                   <Font size="19.0" />
                </font>

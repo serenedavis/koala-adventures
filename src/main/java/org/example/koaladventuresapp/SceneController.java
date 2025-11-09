@@ -62,8 +62,6 @@ public class SceneController {
             myInstructionId.fitHeightProperty().bind(instructionPane.heightProperty());
             myInstructionId.setPreserveRatio(false);
 
-            //VBox.setVgrow(space1, Priority.ALWAYS);
-            //VBox.setVgrow(space2, Priority.ALWAYS);
         }
     }
 
@@ -80,6 +78,7 @@ public class SceneController {
             stage.setFullScreen(true);
         }
 
+
         String css = getClass().getResource("application.css").toExternalForm();
         scene.getStylesheets().add(css);
 
@@ -87,15 +86,17 @@ public class SceneController {
     }
 
     public void switchToScene2 (ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("scene2.fxml"));
+        root = FXMLLoader.load(getClass().getResource("map.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
 
-        String css = getClass().getResource("application.css").toExternalForm();
-        scene.getStylesheets().add(css);
 
+        boolean wasFullScreen = stage.isFullScreen();
         stage.setScene(scene);
-        stage.setFullScreen(true);
+
+        if (wasFullScreen) {
+            stage.setFullScreen(true);
+        }
         stage.show();
     }
 
@@ -130,21 +131,4 @@ public class SceneController {
     public static void addToScore(int points) {
         currentScore += points;
     }
-
-    public static int getScore() {
-        return currentScore;
-    }
-
-
-    // When you add your methods, uncomment and put your scene in here
-    /*
-    public void switchToAnotherScene (ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("anotherscene.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-     */
 }
