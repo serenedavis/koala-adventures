@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #37683b" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.koaladventuresapp.LevelController"
+>
+
+<children>
+
+   <Line endX="-43.5" endY="132.78680419921875" layoutX="343.0" layoutY="252.0" startX="-43.5" startY="-237.0" stroke="#ddbb9d" strokeWidth="30.0" />
+
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddbb9d" height="107.0" layoutX="29.0" layoutY="25.0" stroke="TRANSPARENT" strokeType="INSIDE" width="198.0" />
+
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddbb9d" height="107.0" layoutX="50.0" layoutY="264.0" stroke="TRANSPARENT" strokeType="INSIDE" width="137.0" />
+
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddbb9d" height="107.0" layoutX="421.0" layoutY="250.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="159.0" />
+
+   <CubicCurve controlX1="-97.52728271484375" controlX2="94.26553344726562" controlY1="119.41815185546875" controlY2="-13.643836975097656" endX="128.21926879882812" endY="65.27569580078125" fill="#1f93ff00" layoutX="167.0" layoutY="129.0" startX="-73.10174560546875" startY="-7.62939453125E-6" stroke="#ddbb9d" strokeWidth="30.0" />
+
+   <CubicCurve controlX1="-83.86677551269531" controlX2="56.53656005859375" controlY1="20.040725708007812" controlY2="-7.489349365234375" endX="73.9722900390625" endY="169.62075805664062" fill="#1f93ff00" layoutX="224.0" layoutY="188.0" startX="-116.9028549194336" startY="100.79559326171875" stroke="#ddbb9d" strokeWidth="30.0" />
+
+   <CubicCurve controlX1="-44.94354248046875" controlX2="45.90570068359375" controlY1="160.55044555664062" controlY2="41.0" endX="72.67071533203125" endY="100.79559326171875" fill="#1f93ff00" layoutX="420.0" layoutY="209.0" startX="-116.9028549194336" startY="100.79559326171875" stroke="#ddbb9d" strokeWidth="30.0" />
+
+   <Button fx:id="level3" layoutX="101.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadQuiz" text="Level 3" />
+
+   <Button fx:id="level1" layoutX="91.0" layoutY="305.0" mnemonicParsing="false" onAction="#loadLevel1" text="Level 1" />
+
+   <Button fx:id="level2"
+           layoutX="473.0" layoutY="293.0"
+           mnemonicParsing="false"
+           text="Level 2"
+           onAction="#loadLevel2"
+   />
+   <Button fx:id="homeFrmMap" layoutX="530.0" layoutY="25.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
+</children>
+</AnchorPane>

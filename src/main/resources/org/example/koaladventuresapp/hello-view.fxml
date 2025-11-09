@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="rootBox"
+      alignment="CENTER" spacing="10.0"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.koaladventuresapp.HelloController"
+      style="-fx-background-color: pink; -fx-font-family: 'Comic Sans MS';">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <children>
+        <!-- Title -->
+        <Label fx:id="titleLabel"
+               text="Owala Koala"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #6a1b9a;"/>
+
+        <!-- Info text -->
+        <Label fx:id="infoLabel"
+               text="Use the arrow keys to find each koala and bring it to the rescue center."
+               style="-fx-font-size: 10px;"/>
+
+
+        <!-- Start button -->
+        <Button fx:id="startButton"
+                text="Start"
+                style="-fx-font-size: 14px; -fx-font-weight: bold;"
+                onAction="#onStartClick"/>
+
+        <!-- Game grid -->
+        <GridPane fx:id="gameGrid"
+                  hgap="1" vgap="1"
+                  alignment="CENTER"/>
+
+        <!-- Status (level instructions) -->
+        <Label fx:id="statusLabel"
+               text=""
+               style="-fx-font-size: 12px;"/>
+
+        <!-- Health bar -->
+        <Label fx:id="healthLabel"
+               text="Health: ❤️❤️❤️"
+               style="-fx-font-size: 12px;"/>
+
+        <Button fx:id="backToMapButton"
+                text="Back to Map"
+                style="-fx-font-size: 14px; -fx-font-weight: bold;"
+                onAction="#goBackToMap"
+                visible="false"
+                managed="false"/>
+    </children>
+</VBox>
